@@ -4,13 +4,26 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Quandat Hello word bla bla</Text>
-      <StatusBar style="auto" />
+      <View>
+        <Text style={styles.text}>Ton ngo Khong</Text>
+      </View>
+      <Text style={styles.text}>Quandat Hello word
+        <Text style={styles.blas}>
+          bla blas
+        </Text>
+      </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  text: {
+    fontSize: 40,
+    color: "red"
+  },
+  blas: {
+    color: "black"
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
